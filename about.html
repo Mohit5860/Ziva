@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ziva Stays</title>
+    <link rel="stylesheet" href="about.css" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="logo">
+          <h1>Ziva Stays</h1>
+        </div>
+        <ul class="nav-links">
+          <li><a href="/index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+
+        <div class="flex-container">
+          <i onclick="openMenu()" class="fa-solid fa-bars"></i>
+        </div>
+
+        <ul id="sideMenu">
+          <div class="close-btn" onclick="closeMenu()">
+            <i class="fa-solid fa-xmark"></i>
+          </div>
+          <li><a href="index.html" onclick="closeMenu()">Home</a></li>
+          <li><a href="about.html" onclick="closeMenu()">About Us</a></li>
+          <li><a href="gallery.html" onclick="closeMenu()">Gallery</a></li>
+          <li><a href="contact.html" onclick="closeMenu()">Contact Us</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div class="background-div">
+      <div class="content-box">
+        <p class="content-box-heading">About Us</p>
+        <p class="content-box-text">Home > About us</p>
+      </div>
+    </div>
+    <hr class="separator" />
+
+    <div>
+      <div class="about">
+        <p>A little bit about</p>
+        <h1>Ziva Stays</h1>
+      </div>
+      <div class="container">
+        <img src="container.png" alt="Descriptive text" class="image" />
+        <div class="text">
+          <h2>Who are we??</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia
+            fugiat exercitationem, recusandae blanditiis, quae, alias asperiores
+            at adipisci repellendus quaerat obcaecati repellat fuga nemo ratione
+            veritatis id iure debitis quisquam.
+          </p>
+        </div>
+      </div>
+      <div class="container">
+        <img src="container.png" alt="Descriptive text" class="image" />
+        <div class="text">
+          <h2>Your Heading</h2>
+          <p>
+            Your paragraph goes here. This text is left-aligned and styled
+            neatly.
+          </p>
+        </div>
+      </div>
+      <div class="container">
+        <img src="container.png" alt="Descriptive text" class="image" />
+        <div class="text">
+          <h2>Your Heading</h2>
+          <p>
+            Your paragraph goes here. This text is left-aligned and styled
+            neatly.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <footer class="footer">
+      <div>
+        <div class="footer-logo">
+          <img src="https://via.placeholder.com/40" alt="Logo" />
+          <p>
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry.
+          </p>
+        </div>
+        <div class="footer-links">
+          <h4>Links</h4>
+          <ul>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Gallery</a></li>
+            <li><a href="#">Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="footer-contact">
+          <h4>Contact us</h4>
+          <p>
+            <strong>Ziva Stays</strong>, opposite PNB Bank, Malerna, Faridabad,
+            Haryana, 121004, India
+          </p>
+          <p>Monday-Friday, 9:30 am - 5:30 pm</p>
+          <p>Email: ziva.stays@gmail.com</p>
+          <p>Mob.: +923183561921</p>
+        </div>
+      </div>
+    </footer>
+    <div class="footer-bottom">
+      &copy; 2025 Copyright by Ziva Stays. All rights reserved.
+      <div class="footer-social">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-whatsapp"></i></a>
+      </div>
+    </div>
+    <script>
+      const sideMenu = document.querySelector("#sideMenu");
+      const openMenu = () => {
+        sideMenu.style.transform = "translateX(-16rem)";
+      };
+
+      const closeMenu = () => {
+        sideMenu.style.transform = "translateX(16rem)";
+      };
+    </script>
+  </body>
+</html>
