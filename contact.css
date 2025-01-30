@@ -30,9 +30,8 @@ nav {
   display: none;
 }
 
-.nav-links {
-  list-style: none;
-  display: flex;
+.flex-container {
+  display: none;
 }
 
 .nav-links {
