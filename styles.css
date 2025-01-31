@@ -180,20 +180,22 @@ nav {
 
 .quote-text::before,
 .quote-text::after {
-  content: '"';
-  font-size: 50px;
+  font-size: 35px;
   color: purple;
   position: absolute;
 }
 
 .quote-text::before {
-  left: -50px;
-  top: -15px;
+  content: "❜";
+  left: -40px;
+  top: -10px;
+  transform: scaleX(-1);
 }
 
 .quote-text::after {
-  right: -50px;
-  bottom: -15px;
+  content: "❜";
+  right: -40px;
+  bottom: -10px;
 }
 
 .user-icons {
@@ -557,15 +559,15 @@ nav {
   }
 
   .quote-text::before {
-    font-size: 40px;
+    font-size: 30px;
     left: -40px;
-    top: -10px;
+    top: -5px;
   }
 
   .quote-text::after {
-    font-size: 40px;
+    font-size: 30px;
     right: -40px;
-    bottom: -10px;
+    bottom: -5px;
   }
 
   .outer-box {
@@ -699,15 +701,15 @@ nav {
   }
 
   .quote-text::before {
-    font-size: 40px;
-    left: -40px;
-    top: -10px;
+    font-size: 20px;
+    left: -25px;
+    top: 5px;
   }
 
   .quote-text::after {
-    font-size: 40px;
-    right: -40px;
-    bottom: -10px;
+    font-size: 20px;
+    right: -25px;
+    bottom: 5px;
   }
 
   .user img {
@@ -720,7 +722,7 @@ nav {
   }
 
   .star {
-    font-size: 0.8rem;
+    font-size: 0.7rem;
   }
 
   .text-section h1 {
