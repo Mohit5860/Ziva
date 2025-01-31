@@ -114,18 +114,68 @@
 
     <hr class="separator" />
 
-    <div>
+    <div class="testimonial">
       <div class="why-choose">
         <p>Why guest love</p>
         <h1>staying with us</h1>
       </div>
       <div class="quote-container">
-        <p class="quote-text">
+        <p id="testimonial-text" class="quote-text">
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. A veniam
           sequi ratione? Deserunt, magnam quis facere libero similique amet
           quidem deleniti omnis alias laboriosam mollitia nostrum illum,
           corrupti sit saepe?
         </p>
+      </div>
+      <div class="user-icons">
+        <div class="user active" onclick="changeTestimonial(0)">
+          <img src="profile.png" alt="Imran Khan" />
+          <div class="stars">
+            <span class="star">★</span>
+            <span class="star">★</span>
+            <span class="star">★</span>
+            <span class="star">★</span>
+            <span class="star">★</span>
+          </div>
+          <h4>Imran Khan</h4>
+          <p>Software Engineer</p>
+        </div>
+        <div class="user" onclick="changeTestimonial(1)">
+          <img src="profile.png" alt="Romeena De Silva" />
+          <div class="stars">
+            <span class="star">★</span>
+            <span class="star">★</span>
+            <span class="star">★</span>
+            <span class="star">★</span>
+            <span class="star">★</span>
+          </div>
+          <h4>Romeena De Silva</h4>
+          <p>Janet Cosmetics</p>
+        </div>
+        <div class="user" onclick="changeTestimonial(2)">
+          <img src="profile.png" alt="Sarah Doe" />
+          <div class="stars">
+            <span class="star">★</span>
+            <span class="star">★</span>
+            <span class="star">★</span>
+            <span class="star">★</span>
+            <span class="star">★</span>
+          </div>
+          <h4>Sarah Doe</h4>
+          <p>Marketing Manager</p>
+        </div>
+        <div class="user" onclick="changeTestimonial(3)">
+          <img src="profile.png" alt="John Smith" />
+          <div class="stars">
+            <span class="star">★</span>
+            <span class="star">★</span>
+            <span class="star">★</span>
+            <span class="star">★</span>
+            <span class="star">★</span>
+          </div>
+          <h4>John Smith</h4>
+          <p>Business Consultant</p>
+        </div>
       </div>
     </div>
 
@@ -169,9 +219,9 @@
         <div class="footer-links">
           <h4>Links</h4>
           <ul>
-            <li><a href="#">About Us</a></li>
-            <li><a href="#">Gallery</a></li>
-            <li><a href="#">Contact Us</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
           </ul>
         </div>
         <div class="footer-contact">
@@ -223,6 +273,44 @@
       const closeMenu = () => {
         sideMenu.style.transform = "translateX(16rem)";
       };
+
+      const testimonials = [
+        {
+          text: "Without any doubt, I recommend Alcaine Solutions as one of the best web design and digital marketing agencies. One of the best agencies I've come across so far.",
+          name: "Imran Khan",
+          role: "Software Engineer",
+          img: "profile1.jpg",
+        },
+        {
+          text: "Absolutely amazing service! Their team is highly skilled and delivered beyond my expectations. I highly recommend them for branding and web development.",
+          name: "Romeena De Silva",
+          role: "Janet Cosmetics",
+          img: "profile2.jpg",
+        },
+        {
+          text: "They helped my business grow tremendously! The marketing strategies they provided were game-changing. I will definitely work with them again.",
+          name: "Sarah Doe",
+          role: "Marketing Manager",
+          img: "profile3.jpg",
+        },
+        {
+          text: "Professionalism at its best. They have the perfect balance of creativity and technical expertise. My website looks stunning and performs flawlessly.",
+          name: "John Smith",
+          role: "Business Consultant",
+          img: "profile4.jpg",
+        },
+      ];
+
+      function changeTestimonial(index) {
+        document.getElementById("testimonial-text").textContent =
+          testimonials[index].text;
+
+        document
+          .querySelectorAll(".user")
+          .forEach((user) => user.classList.remove("active"));
+
+        document.querySelectorAll(".user")[index].classList.add("active");
+      }
     </script>
   </body>
 </html>
