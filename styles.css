@@ -712,6 +712,11 @@ nav {
     bottom: 5px;
   }
 
+  .user-icons {
+    gap: 20px;
+    margin: 30px 10px;
+  }
+
   .user img {
     width: 40px;
     height: 40px;
